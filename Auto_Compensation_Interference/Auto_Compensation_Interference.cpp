@@ -4,6 +4,7 @@
 #include "stdafx.h"
 #include "Console_String_LIB.h"
 #include "Simple_math_LIB.h"
+#include "GAUSS_LIB.h"
 
 
 int main()
