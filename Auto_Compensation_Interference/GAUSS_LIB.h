@@ -278,7 +278,7 @@ void GAUSScc(int I, long double ar[], long double ai[],
 		cout << "\n";
 	}
 	cout << "\n";
-	getch();
+	_getch();
 	//-----------------------------------------------------------------
 	/*
 	//        вычисление главного определителя
@@ -370,8 +370,8 @@ void GAUSSccc(int I, long double ar[], long double ai[],
 			"УВЕЛИЧИТЬ \n"
 			" ДЛИНУ МАССИВОВ fr,fi\n"
 			" В ПРОЦЕДУРЕ GAUSSccc\n";
-		getch();
-		getch();
+		_getch();
+		_getch();
 	}
 
 	//DTmat<<"ИСХОДНАЯ матрица\n";
@@ -663,7 +663,7 @@ void GAUSSD(int const I, int const M, float x[], double a[]) {
 	//            Х-      корни системы
 
 	cout << "I=" << I << "  M=" << M << "\n";
-	getch();
+	_getch();
 
 	int i, j, m, i1, j1, L;
 	double b;
@@ -681,7 +681,7 @@ void GAUSSD(int const I, int const M, float x[], double a[]) {
 	}
 
 	cout << "найдена треугольная матрица\n";
-	getch();
+	_getch();
 
 	for (j = I - 1;j>0;j--) {
 		for (i = j - 1;i >= 0;i--) {
@@ -698,11 +698,11 @@ void GAUSSD(int const I, int const M, float x[], double a[]) {
 	for (i = 0; i<I; i++) {
 		x[i] = a[i*L + I] / a[i*L + i];
 		cout << x[i] << "  ";
-		getch();
+		_getch();
 	}
 
 	cout << "\n";
-	getch();
+	_getch();
 }  //конец GAUSSD
 
 
@@ -713,7 +713,8 @@ void TREGAUSSD(int const I, int const M, double a[])
  //     const  I     - размерность системы
  //     const  M
  //     double A[]   -расширенная матрица коэффициентов
-	cout << "I=" << I << "  M=" << M << "\n";                     getch();
+	cout << "I=" << I << "  M=" << M << "\n";                     
+	_getch();
 	int i, j, m, i1, j1, L;
 	double b;
 	L = I + 1;
@@ -730,7 +731,7 @@ void TREGAUSSD(int const I, int const M, double a[])
 	}
 
 	cout << "найдена треугольная матрица\n";
-	getch();
+	_getch();
 
 }  //конец TREGAUSSD
 #endif __GAUSS_LIB
