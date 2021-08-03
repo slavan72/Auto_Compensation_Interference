@@ -2,10 +2,10 @@
 //
 
 #include "stdafx.h"
-#include "Console_String_LIB.h"
+//#include "Console_String_LIB.h"
 #include "Simple_math_LIB.h"
-#include "GAUSS_LIB.h"
-#include "WLIB4.h"
+//#include "GAUSS_LIB.h"
+//#include "WLIB4.h"
 #include "F4D_L.H"
 #include "MyGraphics.h"
 
@@ -549,12 +549,12 @@ int main()
 				pnorm = pn = pk = 0.;
 
 
-				gotoxy(50, 2);
-				_cprintf("%4d\r\n", Nsl);
+				//gotoxy(50, 2);//Œ“À¿ƒ ¿
+				//_cprintf("%4d\r\n", Nsl);//Œ“À¿ƒ ¿
 
 				for (i = 0; i < 2 * Nsl; i++) { //4 BEGIN Nsl
-					gotoxy(50, 2);
-					_cprintf("i = %d\n", i);
+					//gotoxy(50, 2);//Œ“À¿ƒ ¿
+					//_cprintf("i = %d\n", i);//Œ“À¿ƒ ¿
 
 					L = L + 1;
 					t = dt*L;
@@ -615,8 +615,8 @@ int main()
 							ucdig[0] = usigm1 + .0;
 						}//if(ntakt==21)
 
-						gotoxy(75, 1);
-						_cprintf("ntakt = %4d\n", nc);
+						//gotoxy(75, 1);//Œ“À¿ƒ ¿
+						//_cprintf("ntakt = %4d\n", ntakt);//Œ“À¿ƒ ¿
 						//if(ntakt==43)
 						if (ntakt == 33) {//33 6 BEGIN 	ntakt==33
 
@@ -624,8 +624,6 @@ int main()
 
 							for (nc = 1; nc < Nc; nc++) {
 								usdig[nc] = us[nc] + .0;
-								gotoxy(75, 2);
-								_cprintf("nc = %4d\n", nc);
 							}//nc
 
 							usdig[0] = usigm1 + .0;
@@ -645,8 +643,8 @@ int main()
 								q = q*SIGN(usdig[nc]);
 								usdig[nc] = q / 128.;
 
-								gotoxy(100, 2);
-								_cprintf("nc = %4d\n", nc);
+								//gotoxy(100, 2);//Œ“À¿ƒ ¿
+								//_cprintf("nc = %4d\n", nc);//Œ“À¿ƒ ¿
 								//--------------------------------------------
 								/*
 								//  ŒÔÂ‰ÂÎÂÌËÂ ÔÓÒÚÓˇÌÌÓÈ ÒÓÒÚ‡‚Îˇ˛˘ÂÈ U ¿÷œ

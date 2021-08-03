@@ -24,22 +24,13 @@
     <ClInclude Include="targetver.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
-    <ClInclude Include="Console_String_LIB.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
     <ClInclude Include="Simple_math_LIB.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="GAUSS_LIB.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
     <ClInclude Include="f4d_l.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
     <ClInclude Include="mygraphics.h">
-      <Filter>Заголовочные файлы</Filter>
-    </ClInclude>
-    <ClInclude Include="wlib4.h">
       <Filter>Заголовочные файлы</Filter>
     </ClInclude>
   </ItemGroup>
