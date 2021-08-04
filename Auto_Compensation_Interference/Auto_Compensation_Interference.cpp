@@ -751,8 +751,8 @@ int main()
 					if (L < Lgraf && L % Mgraf == 0) { //5 BEGIN if((int)(t*1e9)%(int)(tzam*1e9)==0&&t<=tgraf)
 						podav = DB(pn / pnorm);
 						podav1 = DB(pk / pnorm);
-						X[L / Mgraf] = X[L / Mgraf] + (float)(pn / pnorm);
-						Y[L / Mgraf] = Y[L / Mgraf] + (float)(pk / pnorm);
+						//X[L / Mgraf] = X[L / Mgraf] + (float)(pn / pnorm);
+						//Y[L / Mgraf] = Y[L / Mgraf] + (float)(pk / pnorm);
 
 						if (m == 0) {
 							DTw << "\n   " << Ngraf << "  " << dtgraf << "  " << Nc - 1 << "\n";
@@ -854,7 +854,7 @@ int main()
 			//getch();getch();
 		ZZZZ545:
 			if (nr == Nr) {
-				for (n = 0;n < 600; n++) {
+				for (n = 0; n < 600; n++) {
 					X[n] = (float)(10.*log10(X[n] / Nr + 1e-12));
 					Y[n] = (float)(10.*log10(Y[n] / Nr + 1e-12));
 
