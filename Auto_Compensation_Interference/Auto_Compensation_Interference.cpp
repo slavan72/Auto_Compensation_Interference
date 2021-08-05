@@ -125,7 +125,7 @@ int main()
 {
 	setlocale(LC_ALL, "Russian");
 	/***COMMENT***/
-	float X[100], Y[100];//,Z[600];//,Z1[600];//,Z2[600];
+	float X[680], Y[680];//,Z[600];//,Z1[600];//,Z2[600];
 	double pc[NC], pcc[NC], pcr[NC], pci[NC], kor[NC];//
 	double  ucdigzad[5][25], usdigzad[5][25];
 	long int L, q;//
@@ -751,8 +751,8 @@ int main()
 					if (L < Lgraf && L % Mgraf == 0) { //5 BEGIN if((int)(t*1e9)%(int)(tzam*1e9)==0&&t<=tgraf)
 						podav = DB(pn / pnorm);
 						podav1 = DB(pk / pnorm);
-						//X[L / Mgraf] = X[L / Mgraf] + (float)(pn / pnorm);
-						//Y[L / Mgraf] = Y[L / Mgraf] + (float)(pk / pnorm);
+						X[L / Mgraf] = X[L / Mgraf] + (float)(pn / pnorm);
+						Y[L / Mgraf] = Y[L / Mgraf] + (float)(pk / pnorm);
 
 						if (m == 0) {
 							DTw << "\n   " << Ngraf << "  " << dtgraf << "  " << Nc - 1 << "\n";
